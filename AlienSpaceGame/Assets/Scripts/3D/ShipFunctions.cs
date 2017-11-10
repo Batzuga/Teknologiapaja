@@ -49,7 +49,7 @@ public class ShipFunctions : MonoBehaviour {
             lamps[2].GetComponent<Light>().color = lightColor[0];
         }
 
-        gasYPos = -3.3f + (gasYDist / (maxStars * 1.0f) * (stars * 1.0f));
+        gasYPos = -3f + (gasYDist / (maxStars * 1.0f) * (stars * 1.0f));
         Debug.Log(gasYPos);
         starGas.transform.position = new Vector3(starGas.transform.position.x, gasYPos, starGas.transform.position.z);
 
