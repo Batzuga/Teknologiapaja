@@ -97,6 +97,10 @@ public class PlayerControls3d : MonoBehaviour{
             energy -= 1 * Time.deltaTime;
             pui.GetEnergy(energy);
         }
+        if(Input.GetKeyDown(KeyCode.Space))
+        {
+            Jump();
+        }
        
     }
 
