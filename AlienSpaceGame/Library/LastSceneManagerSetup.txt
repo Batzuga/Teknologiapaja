@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/Scenes/Planet3.unity
+- path: Assets/Scenes/SpaceShip.unity
   isLoaded: 1
   isActive: 1

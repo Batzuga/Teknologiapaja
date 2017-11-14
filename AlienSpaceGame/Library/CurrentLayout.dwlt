@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 8}
-  m_MinSize: {x: 950, y: 421}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -40,8 +40,8 @@ MonoBehaviour:
     y: 550
     width: 1536
     height: 181
-  m_MinSize: {x: 100, y: 100}
-  m_MaxSize: {x: 4000, y: 4000}
+  m_MinSize: {x: 100, y: 121}
+  m_MaxSize: {x: 4000, y: 4021}
   m_ActualView: {fileID: 18}
   m_Panes:
   - {fileID: 18}
@@ -67,8 +67,8 @@ MonoBehaviour:
     y: 30
     width: 1536
     height: 731
-  m_MinSize: {x: 915, y: 371}
-  m_MaxSize: {x: 22010, y: 14021}
+  m_MinSize: {x: 917, y: 392}
+  m_MaxSize: {x: 22012, y: 14042}
   vertical: 1
   controlID: 9
 --- !u!114 &4
@@ -118,8 +118,8 @@ MonoBehaviour:
     y: 0
     width: 1536
     height: 550
-  m_MinSize: {x: 915, y: 271}
-  m_MaxSize: {x: 22010, y: 10021}
+  m_MinSize: {x: 917, y: 271}
+  m_MaxSize: {x: 22012, y: 10021}
   vertical: 0
   controlID: 10
 --- !u!114 &6
@@ -338,7 +338,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 66250000
     m_LastClickedID: 9574
-    m_ExpandedIDs: 000000009a270000c4270000ca270000ee270000f0270000fe2700001828000032280000382800003a28000086280000
+    m_ExpandedIDs: 000000009a270000a2270000c4270000ca270000f0270000fe270000382800003a2800005c28000086280000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -363,24 +363,24 @@ MonoBehaviour:
       m_Icon: {fileID: 0}
       m_ResourceFile: 
   m_AssetTreeState:
-    scrollPos: {x: 0, y: 772.0785}
+    scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 000000009a270000c4270000ca270000ee270000f0270000fe2700001828000032280000382800003a2800005c28000086280000
+    m_ExpandedIDs: 000000009a270000a2270000c4270000ca270000f0270000fe270000382800003a2800005c28000086280000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: Splahs
-      m_OriginalName: Splahs
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 10302
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 0
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 1
       m_ClientGUIView: {fileID: 4}
     m_SearchString: 
@@ -482,9 +482,9 @@ MonoBehaviour:
     height: 529
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: c2270000
+    m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: e61afdff7428fdff3c2afdff3af6ffff3cf6ffff3ef6ffff4ef6ffff50f6ffff74f7ffffa6fbffff00000000c62b00005a2c0000742c0000
+    m_ExpandedIDs: 00f9ffffa6fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -503,7 +503,7 @@ MonoBehaviour:
       m_ClientGUIView: {fileID: 7}
     m_SearchString: 
   m_ExpandedScenes:
-  - Planet3
+  - SpaceShip
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -539,9 +539,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 23.191084, y: -29.258482, z: 57.43052}
+    m_Target: {x: 31.075314, y: -16.532782, z: 58.20284}
     speed: 2
-    m_Value: {x: 23.191084, y: -29.258482, z: 57.43052}
+    m_Value: {x: 31.075314, y: -16.532782, z: 58.20284}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -564,13 +564,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.2301363, y: -0.22472541, z: 0.054711375, w: -0.94527376}
+    m_Target: {x: -0.12516925, y: -0.11225878, z: 0.014255419, w: -0.9856609}
     speed: 2
-    m_Value: {x: -0.2301363, y: -0.22472541, z: 0.054711375, w: -0.94527376}
+    m_Value: {x: -0.12516925, y: -0.11225878, z: 0.014255419, w: -0.9856609}
   m_Size:
-    m_Target: 128.26523
+    m_Target: 91.71943
     speed: 2
-    m_Value: 128.26523
+    m_Value: 91.71943
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -651,7 +651,7 @@ MonoBehaviour:
       width: 1896.5569
       height: 1200.2931
     m_MinimalGUI: 1
-  m_defaultScale: 1
+  m_defaultScale: 0.42135417
   m_TargetTexture: {fileID: 0}
   m_CurrentColorSpace: 0
   m_LastWindowPixelSize: {x: 809, y: 529}
