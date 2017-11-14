@@ -92,7 +92,7 @@ public class PlayerControls3d : MonoBehaviour{
         //SETS MOVEMENT SPEED
         movementSpeed = baseSpeed;
         //REMOVES ENERGY IF MOVING
-        if(moving && levelName == "Planet")
+        if(moving && levelName != "SpaceShip")
         {
             energy -= 1 * Time.deltaTime;
             pui.GetEnergy(energy);
@@ -157,6 +157,18 @@ public class PlayerControls3d : MonoBehaviour{
         {
             pui.SetInteract(2);
         }
+        if (col.gameObject.tag == "P1T1")
+        {
+            pui.SetInteract(3);
+        }
+        if (col.gameObject.tag == "P1T2")
+        {
+            pui.SetInteract(4);
+        }
+        if (col.gameObject.tag == "P1T3")
+        {
+            pui.SetInteract(5);
+        }
     }
     void OnTriggerExit(Collider col)
     {
@@ -169,6 +181,18 @@ public class PlayerControls3d : MonoBehaviour{
             pui.HideInteract();
         }
         if (col.gameObject.tag == "ShipCMD")
+        {
+            pui.HideInteract();
+        }
+        if (col.gameObject.tag == "P1T1")
+        {
+            pui.HideInteract();
+        }
+        if (col.gameObject.tag == "P1T2")
+        {
+            pui.HideInteract();
+        }
+        if (col.gameObject.tag == "P1T3")
         {
             pui.HideInteract();
         }

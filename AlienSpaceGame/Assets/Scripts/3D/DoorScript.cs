@@ -16,7 +16,7 @@ public class DoorScript : MonoBehaviour {
 	// Use this for initialization
 	void Start ()
     {
-
+        PlayerPrefs.DeleteAll();
         locked = false;
         wiring = PlayerPrefs.GetInt("WiringCollected");
         opening = false;
@@ -30,6 +30,19 @@ public class DoorScript : MonoBehaviour {
         {
             locked = true;
         }
+        if(doorName == "Puzzle1Door" && PlayerPrefs.GetInt("Puzzle1Completed") == 0)
+        {
+            locked = true;
+        }
+        if(doorName == "Puzzle1Door" && PlayerPrefs.GetInt("Puzzle1Completed") == 1)
+        {
+            Debug.Log("DOOR UNLOCKED");
+            locked = false;
+        }
+    }
+    public void CallOpen()
+    {
+        CheckIfLocked();
     }
 	void Update ()
     {
