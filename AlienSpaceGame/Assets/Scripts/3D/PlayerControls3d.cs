@@ -36,13 +36,20 @@ public class PlayerControls3d : MonoBehaviour{
 
     //PARTS COLLECTED
     private int batteryCollected;
+    private Puzzle2Script p2s;
 
     void Awake()
     {
         //GETS COMPONENTS
         rb = GetComponent<Rigidbody>();
         pui = GameObject.Find("Canvas").GetComponent<PlayerUI>();
+        spawnPoint = GameObject.Find("SpawnPoint").transform;
         transform.position = spawnPoint.position;
+        try
+        {
+          p2s = GameObject.Find("Puzzle2").GetComponent<Puzzle2Script>();
+        }
+        catch { }
     }
 
     void Start ()
@@ -73,6 +80,10 @@ public class PlayerControls3d : MonoBehaviour{
     {
         Movements();
         ToShipEffect();
+        if(energy == 0)
+        {
+            canMove = false;
+        }
 	}
     public void StartBeaming()
     {
@@ -96,6 +107,10 @@ public class PlayerControls3d : MonoBehaviour{
         {
             energy -= 1 * Time.deltaTime;
             pui.GetEnergy(energy);
+            if(energy < 0)
+            {
+                energy = 0;
+            }
         }
         if(Input.GetKeyDown(KeyCode.Space))
         {
@@ -107,10 +122,11 @@ public class PlayerControls3d : MonoBehaviour{
 
     public void Jump()
     {
-        if(canJump && jumpUnlocked)
+        if(canJump && jumpUnlocked && energy >= 5f)
         {
             canJump = false;
             grounded = false;
+            GameObject.Find("PlayerBody").GetComponent<Animator>().SetBool("isGrounded", false);
             rb.AddForce(Vector3.up * jumpPower);
             airControl = 0.25f;
             energy -= 5;
@@ -124,6 +140,8 @@ public class PlayerControls3d : MonoBehaviour{
             canJump = true;
             grounded = true;
             airControl = 1f;
+            GameObject.Find("PlayerBody").GetComponent<Animator>().SetBool("isGrounded", true);
+
         }
     }
 
@@ -133,7 +151,7 @@ public class PlayerControls3d : MonoBehaviour{
         {
             if(energy < maxEnergy)
             {
-                energy += 5f * Time.deltaTime;              
+                energy += 10f * Time.deltaTime;              
             }
             if(energy > maxEnergy)
             {
@@ -169,6 +187,43 @@ public class PlayerControls3d : MonoBehaviour{
         {
             pui.SetInteract(5);
         }
+        if (col.gameObject.tag == "Planet1")
+        {
+            pui.SetInteract(6);
+        }
+        if(col.gameObject.tag == "Planet2")
+        {
+            pui.SetInteract(7);
+        }
+        if (col.gameObject.tag == "P2R")
+        {
+            p2s.counter = 1;
+            p2s.moving = true;
+        }
+        if (col.gameObject.tag == "P2L")
+        {
+            p2s.counter = 2;
+            p2s.moving = true;
+        }
+        if (col.gameObject.tag == "P2U")
+        {
+            p2s.counter = 3;
+            p2s.moving = true;
+        }
+        if (col.gameObject.tag == "P2B")
+        {
+            p2s.counter = 4;
+            p2s.moving = true;
+        }
+        if (col.gameObject.tag == "P2B")
+        {
+            p2s.counter = 4;
+            p2s.moving = true;
+        }
+        if (col.gameObject.tag == "P2Beam")
+        {
+            p2s.BeamSet();
+        }
     }
     void OnTriggerExit(Collider col)
     {
@@ -195,6 +250,34 @@ public class PlayerControls3d : MonoBehaviour{
         if (col.gameObject.tag == "P1T3")
         {
             pui.HideInteract();
+        }
+        if (col.gameObject.tag == "Planet1")
+        {
+            pui.HideInteract();
+        }
+        if (col.gameObject.tag == "Planet2")
+        {
+            pui.HideInteract();
+        }
+        if (col.gameObject.tag == "P2R")
+        {
+            p2s.moving = false;
+            p2s.counter = 0;
+        }
+        if (col.gameObject.tag == "P2L")
+        {
+            p2s.moving = false;
+            p2s.counter = 0;
+        }
+        if (col.gameObject.tag == "P2U")
+        {
+            p2s.moving = false;
+            p2s.counter = 0;
+        }
+        if (col.gameObject.tag == "P2B")
+        {
+            p2s.moving = false;
+            p2s.counter = 0;
         }
     }
 }

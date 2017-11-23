@@ -16,7 +16,7 @@ public class Joystick : MonoBehaviour, IDragHandler, IPointerDownHandler, IPoint
     }
     public float movementSpeed;
     private GameObject player;
-    private GameObject playerBody;
+    public GameObject playerBody;
     private Rigidbody rb;
     private PlayerControls3d pc3d;
     private bool canMove;
@@ -32,7 +32,7 @@ public class Joystick : MonoBehaviour, IDragHandler, IPointerDownHandler, IPoint
         rb = player.GetComponent<Rigidbody>();
         pc3d = player.GetComponent<PlayerControls3d>();
         InputDirection = Vector3.zero;
-        rotater = GameObject.Find("Rotater");
+        rotater = GameObject.Find("Rotater" );
 	}
 	
 	void Update ()
@@ -61,14 +61,17 @@ public class Joystick : MonoBehaviour, IDragHandler, IPointerDownHandler, IPoint
             playerBody.transform.localRotation = rot;
             rb.velocity = new Vector3(InputDirection.x * movementSpeed, rb.velocity.y, InputDirection.z * movementSpeed);
             pc3d.moving = true;
+            playerBody.GetComponent<Animator>().SetBool("isMoving", true);
             
         }
         if(InputDirection == Vector3.zero || !canMove)
         {
             rb.velocity = new Vector3(0,rb.velocity.y,0);
             pc3d.moving = false;
+            playerBody.GetComponent<Animator>().SetBool("isMoving", false);
+
         }
-        
+
     }
 
     void GetStats()

@@ -16,9 +16,14 @@ public class Interact : MonoBehaviour {
         lmanager = GameObject.Find("ScriptBlock").GetComponent<LevelManager>();
         interaction = 0;
         pc3d = GameObject.Find("Player3D").GetComponent<PlayerControls3d>();
-        p1s = GameObject.Find("Puzzle1").GetComponent<Puzzle1Script>();
+        try
+        {
+            p1s = GameObject.Find("Puzzle1").GetComponent<Puzzle1Script>();
+        }
+        catch { }
 
-	}
+
+    }
 
     public void InteractFunction()
     {
@@ -42,6 +47,14 @@ public class Interact : MonoBehaviour {
                 break;
             case 5:
                 p1s.AddIcon(2);
+                break;
+            case 6:
+                lmanager.CallWaitTimes("Planet");
+                //change spawn point in level
+                break;
+            case 7:
+                lmanager.CallWaitTimes("Planet2");
+                //change spawn point in level
                 break;
         }
     }

@@ -16,7 +16,8 @@ public class Puzzle1Script : MonoBehaviour {
     public bool completed;
     public GameObject door;
     private DoorScript ds;
-    
+    public GameObject lo;
+    public Material mat1;
     // Use this for initialization
     void Start()
     {
@@ -24,21 +25,21 @@ public class Puzzle1Script : MonoBehaviour {
         counter = 0;
         completed = false;
     }
-
+    void LightOn()
+    {
+        lo.GetComponent<MeshRenderer>().material = mat1;
+    }
     public void AddIcon(int i)
     {
-        Debug.Log("1");
         objArray[counter] = Instantiate(visuals[i], objects[counter].transform.position, objects[counter].transform.rotation) as GameObject;
         puzzleSequence[counter] = i+1;
         if(counter < 2)
         {
-            Debug.Log("2");
             counter++;
             return;
         }
         if(counter == 2)
         {
-            Debug.Log("3");
             CheckSequence();
         }
     }
@@ -56,7 +57,7 @@ public class Puzzle1Script : MonoBehaviour {
     }
     void CheckSequence()
     {
-        for(int i = 0; i < 2; i++)
+        for(int i = 0; i <= 2; i++)
         {
             if (puzzleSequence[i] != correctSequence[i])
             {
@@ -67,6 +68,7 @@ public class Puzzle1Script : MonoBehaviour {
         completed = true;
         PlayerPrefs.SetInt("Puzzle1Completed", 1);
         ds.CallOpen();
+        LightOn();
     }
     // Update is called once per frame
     void Update () {
