@@ -20,7 +20,7 @@ MonoBehaviour:
   m_ShowMode: 4
   m_Title: 
   m_RootView: {fileID: 2}
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &2
 MonoBehaviour:
@@ -43,7 +43,7 @@ MonoBehaviour:
     y: 0
     width: 1920
     height: 997
-  m_MinSize: {x: 950, y: 542}
+  m_MinSize: {x: 950, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
 --- !u!114 &3
 MonoBehaviour:
@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 235
+  controlID: 34
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 236
+  controlID: 35
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 237
+  controlID: 36
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -289,14 +289,14 @@ MonoBehaviour:
     width: 1148
     height: 551
   m_SceneLighting: 1
-  lastFramingTime: 2151.4958317796304
+  lastFramingTime: 412.3918742222222
   m_2DMode: 0
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 12.739258, y: 1.2768555, z: 17.828125}
+    m_Target: {x: 0.032348633, y: 1.4865723, z: 0.41992188}
     speed: 2
-    m_Value: {x: 12.739258, y: 1.2768555, z: 17.828125}
+    m_Value: {x: 0.032348633, y: 1.4865723, z: 0.41992188}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -319,13 +319,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.11449135, y: -0.3259065, z: 0.03978279, w: -0.9376343}
+    m_Target: {x: -0.14848402, y: 0.17696062, z: -0.027022174, w: -0.972583}
     speed: 2
-    m_Value: {x: -0.11448769, y: -0.32589608, z: 0.03978152, w: -0.9376043}
+    m_Value: {x: -0.14848326, y: 0.17695971, z: -0.027022036, w: -0.972578}
   m_Size:
-    m_Target: 81.63491
+    m_Target: 7.1397552
     speed: 2
-    m_Value: 81.63491
+    m_Value: 7.1397552
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -365,9 +365,9 @@ MonoBehaviour:
     height: 551
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 3c360000
-    m_LastClickedID: 13884
-    m_ExpandedIDs: 8cedffff70f4ffff30f8ffff58f9ffffa6fbffff00000000
+    m_SelectedIDs: 88d9ffff
+    m_LastClickedID: -9848
+    m_ExpandedIDs: 94d9ffffe2dbffff96e2ffff94e4ffffa6ebffff1ef4ffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -530,19 +530,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/Scenes/temp
+    - Assets/3d_assets/animals
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/Scenes/temp
+  - Assets/3d_assets/animals
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\git\Teknologiapaja\AlienSpaceGame
   m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 702d0000
-    m_LastClickedID: 11632
-    m_ExpandedIDs: 00000000a4270000242900002e2c0000262e0000b82e0000fa2e0000542f00009430000036310000de3200002a3300003635000000ca9a3bffffff7f
+    m_SelectedIDs: 46440000
+    m_LastClickedID: 17478
+    m_ExpandedIDs: 00000000be27000050280000742900007e2c00008e2e0000202f0000602f0000ba2f0000fa3000001a3100009a310000423300008e330000983500004644000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -570,7 +570,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000a4270000242900002e2c0000262e0000b82e0000fa2e0000542f00009430000036310000de3200002a33000036350000
+    m_ExpandedIDs: 00000000be270000742900007e2c00008e2e0000202f0000602f0000ba2f0000fa3000009a310000423300008e33000098350000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
