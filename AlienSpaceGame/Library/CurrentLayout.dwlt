@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 9
+  controlID: 87
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 10
+  controlID: 88
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 11
+  controlID: 89
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -319,13 +319,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.2878825, y: -0.05457107, z: 0.016424267, w: -0.95597756}
+    m_Target: {x: -0.25335422, y: 0.41610906, z: -0.121915884, w: -0.8647673}
     speed: 2
-    m_Value: {x: -0.28788003, y: -0.0545706, z: 0.016424125, w: -0.95596933}
+    m_Value: {x: -0.25335422, y: 0.41610906, z: -0.121915884, w: -0.8647673}
   m_Size:
-    m_Target: 20.273106
+    m_Target: 42.844707
     speed: 2
-    m_Value: 20.273106
+    m_Value: 42.844707
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -367,26 +367,26 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 2668ffffd876ffff187dffff3488ffff00000000
+    m_ExpandedIDs: a6fbffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: collider1 (1)
-      m_OriginalName: collider1 (1)
+      m_Name: 
+      m_OriginalName: 
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: -155676
+      m_UserData: 0
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 4
+      m_OriginalEventType: 11
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
   m_ExpandedScenes:
-  - asset_setup
+  - asset_setup2
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -530,19 +530,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/3d_assets/ship_interior
+    - Assets/Scenes/temp
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/3d_assets/ship_interior
+  - Assets/Scenes/temp
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\git\Teknologiapaja\AlienSpaceGame
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 83}
-    m_SelectedIDs: 9a4c0000
-    m_LastClickedID: 19610
-    m_ExpandedIDs: 00000000f83b0000503c0000fa3c00004e3f000090400000ec4000001a410000604100004842000060420000b04200001c440000b04500009a4c000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 291}
+    m_SelectedIDs: f42d0000
+    m_LastClickedID: 11764
+    m_ExpandedIDs: 00000000a42700003a28000074290000962c0000c42e0000582f00009c2f0000f62f0000363100006a310000f03100009e330000aa3400000036000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -570,7 +570,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000f83b0000503c0000fa3c00004e3f000090400000ec4000001a4100006041000048420000604200006a420000b04200001c44000050440000b0450000
+    m_ExpandedIDs: 00000000a42700003a28000074290000962c0000c42e0000582f00009c2f0000f62f0000363100006a310000f03100009e330000aa34000000360000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -597,7 +597,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
