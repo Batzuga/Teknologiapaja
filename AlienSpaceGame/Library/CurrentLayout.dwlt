@@ -109,7 +109,7 @@ MonoBehaviour:
   m_MinSize: {x: 683, y: 492}
   m_MaxSize: {x: 14004, y: 14042}
   vertical: 0
-  controlID: 34
+  controlID: 9
 --- !u!114 &6
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -133,7 +133,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 492}
   m_MaxSize: {x: 10002, y: 14042}
   vertical: 1
-  controlID: 35
+  controlID: 10
 --- !u!114 &7
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -157,7 +157,7 @@ MonoBehaviour:
   m_MinSize: {x: 406, y: 221}
   m_MaxSize: {x: 8006, y: 4021}
   vertical: 0
-  controlID: 36
+  controlID: 11
 --- !u!114 &8
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -294,9 +294,9 @@ MonoBehaviour:
   m_isRotationLocked: 0
   m_AudioPlay: 0
   m_Position:
-    m_Target: {x: 0.032348633, y: 1.4865723, z: 0.41992188}
+    m_Target: {x: 0.5371704, y: 0.6328125, z: 2.0086462}
     speed: 2
-    m_Value: {x: 0.032348633, y: 1.4865723, z: 0.41992188}
+    m_Value: {x: 0.5371704, y: 0.6328125, z: 2.0086462}
   m_RenderMode: 0
   m_ValidateTrueMetals: 0
   m_SceneViewState:
@@ -319,13 +319,13 @@ MonoBehaviour:
       speed: 2
       m_Value: 0
   m_Rotation:
-    m_Target: {x: -0.14848402, y: 0.17696062, z: -0.027022174, w: -0.972583}
+    m_Target: {x: -0.2878825, y: -0.05457107, z: 0.016424267, w: -0.95597756}
     speed: 2
-    m_Value: {x: -0.14848326, y: 0.17695971, z: -0.027022036, w: -0.972578}
+    m_Value: {x: -0.28788003, y: -0.0545706, z: 0.016424125, w: -0.95596933}
   m_Size:
-    m_Target: 7.1397552
+    m_Target: 20.273106
     speed: 2
-    m_Value: 7.1397552
+    m_Value: 20.273106
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -365,28 +365,28 @@ MonoBehaviour:
     height: 551
   m_TreeViewState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 88d9ffff
-    m_LastClickedID: -9848
-    m_ExpandedIDs: 94d9ffffe2dbffff96e2ffff94e4ffffa6ebffff1ef4ffff00000000
+    m_SelectedIDs: 
+    m_LastClickedID: 0
+    m_ExpandedIDs: 2668ffffd876ffff187dffff3488ffff00000000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
-      m_Name: 
-      m_OriginalName: 
+      m_Name: collider1 (1)
+      m_OriginalName: collider1 (1)
       m_EditFieldRect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 0
         height: 0
-      m_UserData: 0
+      m_UserData: -155676
       m_IsWaitingForDelay: 0
       m_IsRenaming: 0
-      m_OriginalEventType: 11
+      m_OriginalEventType: 4
       m_IsRenamingFilename: 0
       m_ClientGUIView: {fileID: 8}
     m_SearchString: 
   m_ExpandedScenes:
-  - asset_setup3
+  - asset_setup
   m_CurrenRootInstanceID: 0
   m_Locked: 0
   m_CurrentSortingName: TransformSorting
@@ -530,19 +530,19 @@ MonoBehaviour:
     m_ShowAllHits: 0
     m_SearchArea: 0
     m_Folders:
-    - Assets/3d_assets/animals
+    - Assets/3d_assets/ship_interior
   m_ViewMode: 1
   m_StartGridSize: 64
   m_LastFolders:
-  - Assets/3d_assets/animals
+  - Assets/3d_assets/ship_interior
   m_LastFoldersGridSize: -1
   m_LastProjectPath: D:\git\Teknologiapaja\AlienSpaceGame
   m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 46440000
-    m_LastClickedID: 17478
-    m_ExpandedIDs: 00000000be27000050280000742900007e2c00008e2e0000202f0000602f0000ba2f0000fa3000001a3100009a310000423300008e330000983500004644000000ca9a3bffffff7f
+    scrollPos: {x: 0, y: 83}
+    m_SelectedIDs: 9a4c0000
+    m_LastClickedID: 19610
+    m_ExpandedIDs: 00000000f83b0000503c0000fa3c00004e3f000090400000ec4000001a410000604100004842000060420000b04200001c440000b04500009a4c000000ca9a3bffffff7f
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -570,7 +570,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-    m_ExpandedIDs: 00000000be270000742900007e2c00008e2e0000202f0000602f0000ba2f0000fa3000009a310000423300008e33000098350000
+    m_ExpandedIDs: 00000000f83b0000503c0000fa3c00004e3f000090400000ec4000001a4100006041000048420000604200006a420000b04200001c44000050440000b0450000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -597,7 +597,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 0
+    m_HadKeyboardFocusLastEvent: 1
     m_ExpandedInstanceIDs: c6230000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
